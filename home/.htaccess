@@ -1,0 +1,15 @@
+Options -Indexes
+
+RewriteEngine on
+
+ErrorDocument 404 /ecommerce/404.php
+
+
+RewriteRule ^cart?$ cart.php
+RewriteRule ^login?$ login.php
+RewriteRule ^register?$ register.php
+RewriteRule ^cart?$ cart.php
+RewriteRule ^index?$ index.php
+
+RewriteRule ^url/([^/]*)?$ detaile.php?id=$1
+RewriteRule ^url/([^/]*)?$ file.php?id=$1
